@@ -1,0 +1,158 @@
+.gridContainer{
+  .grid-layout{
+    display: flex;
+    justify-content: center;
+  margin-top: 20px;
+
+    .card-component{
+      width:calc(100% - 40px);
+      height: 360px;
+      background: none;
+      border: 2px solid  transparent;
+      border-radius: 16px ;
+
+      border-image: linear-gradient(45.43deg, #0FC5F9 32.81%, #3ACAF3 65.7%);
+      
+      
+      border-image-slice: 1;
+      animation-name: border-run;
+      animation-duration: 5;
+      .content{
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        padding-right: 5px;
+        ul{
+          list-style: none;
+          li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            p{
+            width: 100%;
+            overflow: hidden;
+            &.active{
+              white-space: nowrap;        
+              text-overflow: ellipsis;
+            }
+
+            color: yellow;
+
+              span{
+                color: #fff;
+              font-size: 12px;
+              font-family: 'Inter';
+              &:nth-child(1){
+                font-weight: 500;
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #fff;
+
+
+              }
+              &:nth-child(2){
+                position: relative;
+                color: yellow;
+
+              }
+              }
+            }
+            
+          }
+        }
+      }
+      .header{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height:22px;
+        border-bottom: 2px solid #0FC5F9;
+        .title{
+          padding: none;
+          margin: none;
+         font-weight: 500;
+         
+         color: #fff;
+         position: relative;
+         left: 10px;
+         font-family: 'Inter';
+         font-size: 12px;
+         line-height: 0;
+        }
+
+      
+    
+    }
+  }
+}
+}
+
+@media screen and (min-width:752px){
+  .min-scale{
+    display: flex;
+    // width: calc(100% - 300px);
+    width: 100%;
+    position: relative;
+    right: 0;
+    padding-left: 300px;
+    justify-content: center;
+  }
+}
+
+.MuiCardContent-root{
+  padding:0px!important;
+}
+.witholdForm{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+  input[type=text]{
+    height: 40px;
+
+    position: relative;
+    width:100%;
+    background: none;
+    border: 2px solid #0FC5F9;
+    border-radius: 16px;
+    padding: 12px;
+    color: #f2f2f2;
+    padding-left: 20px;
+    font-family: 'Inter';
+    font-size:14px;
+    line-height: 0;
+    padding-right: 20px;
+    &:focus{
+      outline: 0;
+      background:#04062E;
+    }
+  }
+  
+}
+button,a{
+  position: relative;
+  height: 40px;
+  width:140px;
+  border: 2px solid #0FC5F9;
+  background: none;
+  cursor: pointer;
+  margin: 10px;
+  color: #f1f1f1;
+  font-family: 'Inter';
+  color: yellow;
+  border-radius: 16px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 13px;
+  &:active{
+    outline: 0;
+    background:none;
+  }
+  &:hover{
+    outline: 0;
+    background:#04062E;
+  }
+}
